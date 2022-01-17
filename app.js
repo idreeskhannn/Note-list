@@ -8,7 +8,7 @@ function add() {
   var disc = document.getElementById("desc").value
   
  
-if((input.length >3 && disc.length >3))
+if((input.length >3 || disc.length >3))
   {
 
     var di = `
@@ -36,20 +36,17 @@ else{
 
   }
 
-function myDel(){
-  card.innerHTML=""
-}
+
 
 function dlt(e) {
   e.parentNode.parentNode.remove()
 }
 
 function edit(e) {
-  console.log(e.parentNode.firstElementChild)
-  // var ad = prompt("add Title", e.parentNode.firstElementChild)
+  var ad = prompt("add Title", e.parentNode.firstElementChild)
   // console.log(ad)
 
 
-  // var ad1 = prompt("add discription")
+  var ad1 = prompt("add discription")
 
 }
